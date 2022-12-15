@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;900&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/shopping-e-commerce-6-2/32/Cart-E_commerce-Global-Shopping-Online-512.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-wrapper">
+            <a href="index.html"> 
+                <p class="logo">Online Shop Admin</p> 
+            </a>
+            <div class="line"></div>
+
+            <nav>
+                <ul class="ul-list">
+                    <li class="li-list">
+                        <a class="list-content" href="index.html">Products</a>
+                    </li>
+                    <li class="li-list">
+                        <a class="list-content" href="customers.html">Customers</a>
+                    </li>
+                    <li class="li-list">
+                        <a class="list-content" href="orders.html">Orders</a>
+                    </li>
+                    <li class="li-list">
+                        <a class="list-content" href="reports.html">Reports</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <h2 class="title">Create a New Page</h2>
+
+        <div class="form-style">
+            <form action="" id="creation">
+                <div class="input-wrapper">
+                    <label for="product-name" class="label-style">Name:</label>
+                    <input type="text" name="productname" id="product-name" class="input-style">
+                    <span class="error-text" id="error_productname"></span>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="product-number" class="label-style">Product Number:</label>
+                    <input type="text" name="productnumber" id="product-number" class="input-style">
+                    <span class="error-text" id="error_productnumber"></span>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="product-color" class="label-style">color:</label>
+                    <input type="text" name="productcolor" id="product-color" class="input-style">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="product-cost" class="label-style">Standard Coast:</label>
+                    <input type="number" name="productcost" id="product-cost" class="input-style">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="product-price" class="label-style">List Price:</label>
+                    <input type="number" name="productprice" id="product-price" class="input-style">
+                    <span class="error-text" id="error_productprice"></span>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="product-size" class="label-style">Size:</label>
+                    <input type="number" name="productsize" id="product-size" class="input-style">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="product-weight" class="label-style">Weight:</label>
+                    <input type="number" name="productweight" id="product-weight" class="input-style">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="product-date" class="label-style">Sell start Date:</label>
+                    <input type="date" name="productdate" id="product-date" class="input-style">
+                </div> 
+                <div class="buttons-wrapper">
+                    <button type="submit" class="save">Save</button>
+                    <a href="index.html" class="back-to">Back To list</a>
+                    <a href="index.html" class="cancel">Cancel</a>
+                </div>
+                
+
+
+            </form>
+         
+            
+        </div>
+        
+        
+    </section>
+
+    <script src="form.js"></script>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
+
+                 <!-- <a href="index.html"> 
+                        <button class="back-to">Back to List</button>
+                    </a>
+                    <a href="index.html">
+                        <button class="cancel">Cancel</button>
+                    </a> -->
