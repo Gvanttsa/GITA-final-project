@@ -42,7 +42,18 @@
     <section class="table-section">
         <div class="title-filter">
             <h2 class="table-title">Products</h2>
-            <button class="filter-btn">Show Filter</button>
+            <button class="filter-btn" id="filter">Show Filter</button>
+        </div>
+        <div class="filter-form-wrapper" id="filter-form">
+            <form action="">
+                <label for="">Name:</label>
+                <input type="text" name="" id="filter-name">
+                <label for="">and Price between</label>
+                <input type="text">
+                <label for="">and</label>
+                <input type="text">
+                <button id="filter-button">Apply</button>
+            </form>
         </div>
         
         <table class="table" id="table">
@@ -59,13 +70,16 @@
         <a href="form.html">
             <button class="new-product" id="new-product">Create New Product</button>
         </a>
-        
     </section>
 
-
+ 
     <footer class="footer">
         <p class="footer-text">&copy;2022 - Online Shop Admin - <span class="priveacy">Privacy</span></p> 
     </footer>
+
     <script src="script.js"></script>
+    <!-- <script src="form.js"></script> -->
+    <script src="filter.js"></script>
+
 </body>
 </html>

@@ -116,6 +116,7 @@ tr:nth-child(even) {
     color: #fff;
     margin-right: 15px;
     padding: 8px 16px;
+    cursor: pointer;
 }
 .delete-button {
     background-color: #D22B2B;
@@ -123,6 +124,7 @@ tr:nth-child(even) {
     color: #fff;
     margin-right: 15px;
     padding: 8px 16px;
+    cursor: pointer;
 }
 .new-product {
     width: 180x;
@@ -134,6 +136,14 @@ tr:nth-child(even) {
     font-size: 18px;
     font-family: 'Red Hat Display', sans-serif;
     margin-top: 15px;
+}
+/* filter */
+.filter-form-wrapper {
+    display: none;
+}
+.filter-form-wrapper.active1 {
+    display: block;
+    margin-bottom: 15px;
 }
 
 /* form */
@@ -176,14 +186,14 @@ tr:nth-child(even) {
     border-radius: 5px;
     cursor: pointer;
     font-size: 15px;
-    
+    font-family: 'Red Hat Display', sans-serif;
+    cursor: pointer;
 }
 .save {
     background-color: 	#228B22;
 }
 .back-to {
     background-color: #808080;
-    /* display: inline-block; */
 }
 .cancel {
     background-color: #D22B2B;
@@ -206,4 +216,8 @@ tr:nth-child(even) {
 .footer-text {
     color: rgb(167, 167, 167);
     font-size: 15x;
+}
+
+.tr-add {
+    display: none;
 }

@@ -77,7 +77,7 @@ function createTable() {
 
     for(let product of products) {
         let tr = document.createElement('tr');
-
+    
         let nameTd = document.createElement('td');
         nameTd.textContent = product.name;
 
@@ -99,12 +99,15 @@ function createTable() {
         buttonEdit.href = "edit.html?name=" + product.name;
         buttonEdit.textContent = "Edit";
         buttonEdit.classList.add("edit-button");
-
+        
         let buttonDelate = document.createElement('a');
-        buttonDelate.href = "delete.html?name" + product.name;
         buttonDelate.textContent = "Delete";
         buttonDelate.classList.add("delete-button");
 
+        buttonDelate.addEventListener('click', function() {
+        tr.remove();
+   })
+   
         editCell.appendChild(buttonEdit);
         editCell.appendChild(buttonDelate);
 
@@ -115,10 +118,13 @@ function createTable() {
         tr.appendChild(dateTd);
         tr.appendChild(editCell);
         table.appendChild(tr);
-
     }
+    
 }
 createTable();
+
+
+
 
 
 

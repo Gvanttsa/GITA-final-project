@@ -45,5 +45,44 @@ for (let item in errors) {
         errorSpan.textContent = errors[item];
     }
 }
+    
+    if(Object.keys(errors).length == 0) {
+        //myForm.submit();
+        
+        window.location.href = 'index.html';
 
+    }
 });
+
+
+// let buttonSave = document.getElementById('save');
+// let wholeForm = document.getElementById('whole-form');
+
+// buttonSave.addEventListener('submit', function(event) {
+//     let formData = {
+//         title: event.target[0].value,
+//         number: event.target[1].value,
+//         color: event.target[2].value,
+//         cost: event.target[3].value,
+//         price: event.target[4].value,
+//         size: event.target[5].value,
+//         weight: event.target[6].value,
+//         date: event.target[7].value,
+//     }
+//     fetch('https://jsonplaceholder.typicode.com/posts',{
+//         method: 'POST',
+//         body: JSON.stringify(formData),
+//         headers: {
+//           'Content-type': 'application/json; charset=UTF-8',
+//         },
+//     })
+//         .then((response) => response.json())
+//         .then((post) => afterPostSave(post));
+//     })
+
+    
+    
+// });
+
+
+

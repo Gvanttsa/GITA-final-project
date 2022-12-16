@@ -42,8 +42,8 @@
     <section>
         <h2 class="title">Create a New Page</h2>
 
-        <div class="form-style">
-            <form action="" id="creation">
+        <div class="form-style" id="whole-form">
+            <form action="" id="creation" method="POST">
                 <div class="input-wrapper">
                     <label for="product-name" class="label-style">Name:</label>
                     <input type="text" name="productname" id="product-name" class="input-style">
@@ -87,29 +87,18 @@
                     <input type="date" name="productdate" id="product-date" class="input-style">
                 </div> 
                 <div class="buttons-wrapper">
-                    <button type="submit" class="save">Save</button>
+                    <button type="submit" class="save" id="save">Save</button>
                     <a href="index.html" class="back-to">Back To list</a>
                     <a href="index.html" class="cancel">Cancel</a>
                 </div>
-                
-
-
             </form>
-         
-            
         </div>
-        
-        
     </section>
 
+
     <script src="form.js"></script>
-    <!-- <script src="script.js"></script> -->
+
 </body>
 </html>
 
-                 <!-- <a href="index.html"> 
-                        <button class="back-to">Back to List</button>
-                    </a>
-                    <a href="index.html">
-                        <button class="cancel">Cancel</button>
-                    </a> -->
+                 
