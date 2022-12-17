@@ -145,6 +145,15 @@ tr:nth-child(even) {
     display: block;
     margin-bottom: 15px;
 }
+.show-text.hide-it {
+    display: none;
+}
+.hide-filter {
+    display: none;
+}
+.hide-filter.show-it {
+    display: block;
+}
 
 /* form */
 .form-style {
@@ -176,7 +185,6 @@ tr:nth-child(even) {
     width: 100%;
   
 }
-
 .save,
 .back-to, 
 .cancel {
@@ -217,7 +225,6 @@ tr:nth-child(even) {
     color: rgb(167, 167, 167);
     font-size: 15x;
 }
-
 .tr-add {
     display: none;
 }
